@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSE 134B Discussion Week 7 Demo</title>
+  <link rel="stylesheet" href="styles-SPA.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">navigate to form without js</a><br>
+    <a href="form-js.html">navigate to form with js</a><br>
+    <a href="theme.html">navigate to theme toggle demo</a>
+  </nav>
+  <main id="gallery">
+    <img id="main-img" src="https://picsum.photos/id/1015/400/300" alt="Gallery Image" />
+    <p id="caption" class="caption">Mountain Lake</p>
+
+    <img-container class="thumbnails">
+      <img src="https://picsum.photos/id/1015/80/60" data-full="https://picsum.photos/id/1015/400/300" data-caption="Mountain Lake" alt="an image of a mountain view with a lake">
+      <img src="https://picsum.photos/id/1025/80/60" data-full="https://picsum.photos/id/1025/400/300" data-caption="Dog Portrait" alt="an image of a dog wrapped in a blanket">
+      <img src="https://picsum.photos/id/1035/80/60" data-full="https://picsum.photos/id/1035/400/300" data-caption="Forest Stream" alt="an image of waterfall">
+    </img-container>
+  </main>
+
+  <script src="script-SPA.js"></script>
+</body>
+</html>

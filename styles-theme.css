@@ -1,0 +1,69 @@
+
+@font-face {
+    font-family: cutesyFont;
+    src: url('assets/fonts/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: angryFont;
+    src: url('assets/fonts/VT323-Regular.ttf');
+}
+
+:root {
+    --bg-color-good: rgb(99, 172, 255);
+    --text-color-good:white;
+    --text-font-good: cutesyFont;
+    --bg-color-evil: rgb(255, 141, 34); 
+    --text-color-evil: rgb(0, 0, 0);
+    --text-font-evil: angryFont;
+}
+html {
+    background-color: var(--bg-color-good);
+    color: var(--text-color-good);
+    font-family: var(--text-font-good), 'Times New Roman', Times, serif;
+}
+
+a {
+    color: white;
+    background-color: black;
+}
+
+.switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+input:checked + .slider {
+    background-color: rgb(157, 0, 255);
+}

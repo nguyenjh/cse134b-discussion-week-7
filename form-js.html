@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 134B Discussion Week 7 Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <main id="contactpageMain">
+        <section id="contactpageSection">
+            <nav>
+                <a href="index.html">navigate to form without js</a><br>
+                <a href="theme.html">navigate to theme toggle demo</a><br>
+                <a href="view-transition-SPA.html">navigate to view transition (SPA)</a>
+            </nav>
+            <article>
+                <form action="https://httpbin.org/post" method="POST" id="contactForm">
+                    <fieldset>
+                        <legend>Contact Me:</legend>
+
+                        <form-field>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" pattern="[A-Za-z]*" required><br>
+                            
+                            <output class="info" id="name-info">Enter your full name.</output><br>
+                            <output class="error" id="name-error"></output>
+                        </form-field>
+                    
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

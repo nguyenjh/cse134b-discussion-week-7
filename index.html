@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 134B Discussion Week 7 Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="contactpageMain">
+        <section id="contactpageSection">
+            <nav>
+                <a href="form-js.html">navigate to form with js</a><br>
+                <a href="theme.html">navigate to theme toggle demo</a><br>
+                <a href="view-transition-SPA.html">navigate to view transition (SPA)</a>
+            </nav>
+            <article>
+                <form action="https://httpbin.org/post" method="POST" id="contactpageForm">
+                    <fieldset>
+                        <legend>Contact Me:</legend>
+
+                        <form-field>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" pattern="[A-Za-z]*" required>
+                            <output class="error" id="name-error"></output>
+                            <output class="info" id="name-info">Enter your name. Valid characters include A-z.</output>
+                        </form-field>
+                        
+                        <form-field>
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" minlength="10" maxlength="300" required></textarea>
+                            <output class="error" id="comments-error"></output>
+                            <output class="info" id="comments-info">Send a message! Minimum number of characters: 10.</output>
+                        </form-field>
+                    
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
